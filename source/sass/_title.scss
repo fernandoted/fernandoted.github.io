@@ -1,0 +1,51 @@
+/* Title styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+
+.content-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	-webkit-flex-wrap: no-wrap;
+	flex-wrap: no-wrap;
+	
+	.text-content-wrapper {
+		width: 100%;
+	
+		.title-section-wrapper {
+			width: 100%;
+			
+			.title-section {
+				font-family: "balboa-plus-inline";
+				font-size: 3rem;
+				text-align: center;
+				padding: 40px 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.content-container {
+		padding-top: 40px;
+		-webkit-justify-content: flex-end;
+		justify-content: flex-end;
+		
+		.text-content-wrapper {
+			width: 60%;
+			padding-right: 80px;
+		
+			.title-section-wrapper {
+				
+				.title-section {
+					
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+/* Variables of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+
+/* fonts */
+@font-face {
+	font-family: "FjallaOne";
+	src: url(../../dist/fonts/FjallaOne-Regular.ttf);
+}
+
+@font-face {
+	font-famly: "balboa-plus-fill";
+}
+
+@font-face {
+	font-family: "proxima-nova";
+}
+/*
+font-family: balboa-plus-fill, sans-serif;
+font-style: normal;
+font-weight: 400;
+*/
+$logo-font: "balboa-plus-fill";
+$text-font: "proxima-nova";
+
+/* colors */
+$white: #FFFFFF;
+$dark: #000000;
+$dark-gray: #565656;
+
+
+/*.white {
+	color: $white;
+}
+
+.dark {
+	color: $dark;
+}*/

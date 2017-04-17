@@ -1,0 +1,37 @@
+/* Leftbar styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+/*.container-full {*/
+	.fixed {
+		display: none;
+	}
+	
+	.mobile-header {
+		position: absolute;
+		display: block;
+		width: 100%;
+	}
+/*}*/
+
+
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	/*.container-full {*/
+		.fixed {
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 9999;
+			width: 40%;
+			/*height: 650px;*/
+		}
+		.mobile-header {
+			display: none;
+		}
+	/*}*/
+}

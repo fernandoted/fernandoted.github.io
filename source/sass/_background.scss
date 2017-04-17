@@ -1,0 +1,78 @@
+/* Backgrounds styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+.bg-home-container {
+	background: url(../../dist/img/home-bg-mobile-03.jpg);
+	background-size: 100% 100%;
+	height: 650px;
+}
+
+.about-bg {
+	background: url(../../dist/img/about-bg-smart-01.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*height: 650px;*/
+}
+
+.infos-bg {
+	background: url(../../dist/img/infos-bg-smart.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: $white;
+}
+
+.offer-bg {
+	background: url(../../dist/img/coffe02-bg-smart.jpg) center center no-repeat;
+	background-size: 100% 100%;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	
+	.bg-home-container {
+		background: url(../../dist/img/home-bg-desktop-01.jpg) center center no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		
+		/*-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;*/
+		/*background-position: 50% 0;
+		position: relative;*/
+	}
+	
+	.about-bg {
+		background: url(../../dist/img/about-bg-desktop-01.jpg) center center no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.infos-bg {
+		background: url(../../dist/img/infos-bg.jpg) center center no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		color: $white;
+	}
+	
+	.offer-bg {
+		background: url(../../dist/img/coffe02-bg-desktop-v2.jpg) center center no-repeat;
+		background-size: 100% 100%;
+	}
+}
+
+/* PRO 15" */
+@media screen and (min-width: 1440px) {
+	.bg-home-container {
+		background: url(../../dist/img/home-bg-lg.jpg);
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+}

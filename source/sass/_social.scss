@@ -1,0 +1,59 @@
+/* Socials styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+.mobile-header {
+	.social-wrapper-desktop {
+		width: 100%;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		
+		.social-link {
+			color: $white;
+			margin: 20px 15px 0 15px;
+			
+			.social-icon {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.social-wrapper-desktop {
+		height: 100px;
+		padding-top: 40px;
+		padding-left: 80px;
+	
+		.social-link {
+			margin-right: 20px;
+			
+			.social-icon {
+				font-size: 1.5rem;
+			}
+		}
+	}
+	/*
+	.mobile-header {
+	.social-wrapper-desktop {
+		width: 100%;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		
+		.social-link {
+			color: $white;
+			margin: 20px 15px 0 15px;
+			
+			.social-icon {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}*/
+}

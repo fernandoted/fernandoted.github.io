@@ -1,0 +1,33 @@
+/* Text styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+.text-color-white-bg {
+	color: $dark-gray;
+}
+
+.text-color-dark-bg {
+	color: $white;
+}
+
+.text-wrapper {
+	width: 100%;
+	
+	.text {
+		padding: 0 20px 40px 20px;
+		font-family: $text-font;
+		font-size: 1.125rem;
+		line-height: 1.750rem;
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.text-wrapper {
+		
+		.text {
+			padding: 0 0 40px 80px;
+		}
+	}
+}

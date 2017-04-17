@@ -1,0 +1,29 @@
+/* Links and buttons styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+
+.resume-button-wrap {
+	text-align: center;
+	padding-bottom: 80px;
+	
+	.download-button {
+		line-height: 1.25rem;
+		text-align: center;
+		vertical-align: middle;
+		border: 1px solid $white;
+		padding: .5rem 2rem;
+		font-size: .8rem;
+		border-radius: .25rem;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+		
+		&:hover {
+			border-color: transparent;
+			background-color: rgba(255,255,255,0.20);
+		}
+	}
+}

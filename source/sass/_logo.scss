@@ -1,0 +1,46 @@
+/* Logo styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+
+.mobile-header, .fixed {
+	.logo {
+		text-align: center;
+		display: block;
+		font-family: $logo-font;
+		padding-top: 80px;
+		/*color: $white;*/
+	}
+}
+
+.mobile-header {
+	.logo {
+		color: $white;
+		font-size: 3.225rem;
+	}
+}
+
+.midnightHeader.default .logo,
+.midnightHeader.white .logo,
+.midnightHeader.white .menu-wrapper .menu-list .menu-item .menu-link,
+.midnightHeader.white .social-wrapper-desktop .social-link .social-icon {
+	color: $white;
+}
+
+.midnightHeader.dark .logo,
+.midnightHeader.dark .menu-wrapper .menu-list .menu-item .menu-link,
+.midnightHeader.dark .social-wrapper-desktop .social-link .social-icon {
+	color: $dark;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.mobile-header, .fixed {
+		.logo {
+			text-align: left;
+			font-size: 3.5rem;
+			padding: 80px 0 0 80px;
+		}
+	}
+}
