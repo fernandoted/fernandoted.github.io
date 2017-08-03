@@ -33,7 +33,7 @@ gulp.task("build-js", function(){
 //watch files
 gulp.task("watch-files", function() {
 	gulp.watch("./source/sass/*.scss",["css-compile"]);
-	gulp.watch("./source/js/**/*.js",["build-js"]);
+	gulp.watch("./source/js/*.js",["build-js"]);
 });
 
 //default command
