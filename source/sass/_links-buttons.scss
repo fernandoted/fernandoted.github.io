@@ -265,8 +265,12 @@ button.back-top.show:active {
 		margin-top: 40px;
 		margin-left: 80px;
 	}
-		.lang-wrapper {
+	.lang-wrapper {
 		padding-left: 80px;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: flex-start;
+		justify-content: flex-start;
 	}
 	.lang-wrapper-home, .lang-wrapper {
 		display: -webkit-flex;
@@ -280,12 +284,7 @@ button.back-top.show:active {
 			cursor: pointer;
 		}
 	}
-	.lang-wrapper {
-		-webkit-align-items: center;
-		align-items: center;
-	}
 	.resume-wrapper {
-		/*margin-top: 20px;*/
 		margin-bottom: 40px;
 
 		.download-button-wrapper {
