@@ -2,36 +2,28 @@
    https://github.com/fernandoted
    03-03-17
 */
-
-/*.container-full {*/
-	.fixed {
-		display: none;
-	}
 	
-	.mobile-header {
-		position: absolute;
-		display: block;
-		width: 100%;
-	}
-/*}*/
-
-
+.mobile-header {
+	width: 100%;
+	display: block;
+	z-index: 9999;
+}
+.fixed {
+	display: none;
+}
 
 /* DESKTOP */
 @media screen and (min-width: 769px) {
-	/*.container-full {*/
-		.fixed {
-			display: block;
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			z-index: 9999;
-			width: 40%;
-			/*height: 650px;*/
-		}
-		.mobile-header {
-			display: none;
-		}
-	/*}*/
+	.fixed {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		width: 40%;
+	}
+	.mobile-header {
+		display: none;
+	}
 }

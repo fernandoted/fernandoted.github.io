@@ -3,31 +3,140 @@
    03-03-17
 */
 
+.log {
+	margin-top: 200px;
+}
+
 .text-color-white-bg {
 	color: $dark-gray;
 }
 
 .text-color-dark-bg {
-	color: $white;
+	/*color: $white;*/
+	color: #BDBDC0;
+}
+.text {
+	font-family: $text-font;
+	color: $dark-gray;
+	font-size: .9rem;
+}
+.text-wrapper {
+	@extend .col-lg-8;
+	@extend .col-sm-12;
+}
+ .animated-text-wrapper {
+ 	display: none;
+ }
+.obs-text {
+	font-family: $text-font;
+	font-size: .8rem;
+	color: $red;
+	opacity: .6;
 }
 
-.text-wrapper {
-	width: 100%;
-	
-	.text {
-		padding: 0 20px 40px 20px;
+/* blog home */
+/* exerpt */
+.exerpt-wrapper {
+	display: none;
+
+	.exerpt {
+		font-family:  $text-font;
+		font-size: .9rem;
+	}
+}
+
+/* projects */
+.bg-pizza {
+	.project-intro-text-wrapper {
+		display: block;
+	}
+}
+.project-intro-text-wrapper {
+	padding: 70px 20px 0 20px;
+
+	.project-intro-text {
 		font-family: $text-font;
+		color: $white;
+		font-size: 1rem;
+	}
+}
+.project-info-half-wrapper {
+	padding-top: 60px;
+}
+.mobile-present-wrapper {
+	padding: 40px 30px 0 30px;
+	text-align: center;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	.text {
+		text-align: left;
 		font-size: 1.125rem;
-		line-height: 1.750rem;
+		color: $white;
+	}
+}
+
+/* IPHONE 5 */
+@media only screen and (min-device-width: 320px) and (min-device-height: 568px) {
+	.mobile-present-wrapper {
+		padding: 60px 30px 40px 30px;
+	}
+	.project-intro-text-wrapper {
+		padding: 80px 20px 0 20px;
+	}
+}
+
+/* IPHONE 6 */
+@media only screen and (min-device-width: 375px) and (min-device-height: 667px) {
+	.mobile-present-wrapper {
+		padding: 120px 40px 40px 40px;
 	}
 }
 
 /* DESKTOP */
 @media screen and (min-width: 769px) {
+	.animated-text-wrapper {
+		display: block;
+		width: 60%;
+		float: right;
+		margin-top: 240px;
+		.type-english, .type-portuguese, p {
+			font-family: $title-font;
+			color: $white;
+			font-size: 3rem;
+			margin-bottom: 0;
+		}
+	}
 	.text-wrapper {
+		padding: 0 80px 0 80px;
 		
 		.text {
-			padding: 0 0 40px 80px;
+			font-size: .9rem;
+		}
+	}
+	.exerpt-wrapper {
+		display: block;
+	}
+	.project-info-half-wrapper {
+		padding: 0 80px 0 140px;
+	}
+	/* hide text inside banner intro desktop */
+	.bg-pizza, .bg-cannelle, .bg-recanto, .bg-coop, .bg-flow, .bg-opiniao {
+		.project-intro-text-wrapper {
+			display: none;
+			.project-intro-text {
+				color: $soft-gray;
+			}
+		}
+	}
+	.project-intro-text-wrapper {
+		padding: 100px 0 80px 0;
+		.project-intro-text {
+			color: $soft-gray;
+			font-size: .9rem;
 		}
 	}
 }

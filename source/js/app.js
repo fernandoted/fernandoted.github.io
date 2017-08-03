@@ -2,77 +2,84 @@
 // https://github.com/fernandoted
 // 03-03-17
 
+/* language */
+$(document).ready(function() {
+     $(".language[lang='pt-br']").hide();
+     $(".eng").click(function(){
+           $(".eng").addClass("select");
+           $(".port").removeClass("select");
+           $(".language[lang=eng]").show();
+           $('.language[lang=pt-br]').hide();
+        });
+        $(".port").click(function(){
+           $(".port").addClass("select");
+           $(".eng").removeClass("select");
+           $(".language[lang=pt-br]").show();
+           $(".language[lang=eng]").hide();
+    });
+});
 
-/*$(function() {
+/* scroll */
+$(document).ready(function() {
+    // add scroll to body tag
+	$('body').scrollspy({target: '.nav', offset: 50});
+	
+	// add smooth scrolling on menu links
+	$('.top-nav a').on('click', function(event) {
+		if (this.hash !== "") {
+			// prevent default anchor click behavior
+			event.preventDefault();
+			// store hash
+			var hash = this.hash;
+			//jQuery animate
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function() {
+				// add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			});
+		} // end if
+	});
+});
+
+/* test scroll mobile menu */
+// $(document).ready(function() {
+// 	$(".scroll").click(function(event) {
+// 		event.preventDefault();
+// 		$("html, body").animate(scrollTop:$(this.hash).offset().top}, 800);
+// 	});
+// });
+
+
+/* back to top button */
+var amountScrolled = 200;
+var amountScrolledNav = 25;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+	$('button.back-top').addClass('show');
+	} else {
+		$('button.back-top').removeClass('show');
+	}
+});
+
+$('button.back-top').click(function() {
+	$('html, body').animate({
+	scrollTop: 0 }, 800);
+	return false;
+});
+
+// fade-in 
+$(document).ready(function() {
+	// every time the window is scrolled
 	$(window).scroll(function() {
-		var window_scrolltop) = $(this).scrollTop();
-		
-		// apply on every element with "parallax" class
-		$('.parallax').each(function() {
-			var obj = $(this);
-			
-			// to guarantee that we work just on visible elements on the screen
-			if ( window_scrolltop >= obj.position().top - obj.height()
-				&& window_scrolltop <= obj.position().top - obj.height()) {
-					
-					// data-divisor atributte defines the speed of the parallax effect
-					var divisor = typeof obj.attr('data-divisor') == 'undefined' ? 4 : obj.attr('data-divisor');
-					
-					// correct the difference of the first element
-					if (obj.is(':first-child')) {
-						var bg-pos = (window_scrolltop - obj.position().top) / divisor;
-					} else {
-						var bg-pos = (window_scrolltop - obj.position().top + (obj.height() - 100)) / divisor;
-					}
-					
-					// modifying background position
-					obj.css({
-						'background-position' : '50%-' + bg-pos + 'px'
-					});
-					
-					// first text animation
-					obj.children('.text').css({
-						'bottom' : (window_scrolltop - obj.position().top + 100) + 'px'
-					});
-				} // element visible on screen
-		}); // fuction in each element with "parallax" class
-	}); // scroll function
-}); // jQuery*/
+		$('.icon-tool').each(function(i) {
+			var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-$(function(){
-	$(window).scroll(function(){
-		var window_scrolltop = $(this).scrollTop();
-		
-		// Passa por cada elemento com a classe .parallax
-		$('.parallax').each(function(){
-			var obj = $(this);
-			
-			// Garante que apenas trabalhemos no elemento que está visível na tela
-			if ( window_scrolltop >= obj.position().top - obj.height() 
-				&& window_scrolltop <= obj.position().top + obj.height()) {
-				
-				// O atributo data-divisor vai definir a velocidade do efeito
-				var divisor = typeof obj.attr('data-divisor') == 'undefined' ? 4 : obj.attr('data-divisor');
-				
-				// Corrige a diferença do primeiro elemento
-				if ( obj.is(':first-child') ) {
-					var bg_pos = ( window_scrolltop - obj.position().top ) / divisor;
-				} else {
-					var bg_pos = ( window_scrolltop - obj.position().top + ( obj.height() ) ) / divisor;
-				}
-				
-				// Modifica a posição do bg
-				obj.css({
-					'background-position' : '0% -' + bg_pos + 'px'
-				});
-				
-				// Animação do primeiro texto
-				/*obj.children('.text').css({
-					'bottom' : ( window_scrolltop - obj.position().top + 100 ) + 'px'
-				});*/
-				
-			} // Garante que apenas trabalhemos no elemento que está visível na tela
-		}); // $('.parallax').each(function(){ ...
-	}); // $(window).scroll(function(){ ...
-}); // jQuery
-
+			if(bottom_of_window > bottom_of_object) {
+				$(this).animate({'opacity':'1'},600);
+			}
+		});
+	});
+});

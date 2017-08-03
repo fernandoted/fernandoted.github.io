@@ -1,0 +1,111 @@
+/* Footer styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+.home-footer-container, .footer-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding-left: 0;
+	padding-right: 0;
+	.footer-email {
+		text-align: center;
+		font-family: $title-font;
+		font-size: .9rem;
+	}
+}
+.home-footer-container {
+	background: $white;
+	color: $soft-gray;
+	-webkit-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+	padding-top: 20px;
+	.footer-column {
+		.footer-text-home {
+			font-size: .9rem;
+			line-height: 1.2rem;
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+		.footer-email {
+			text-align: center;
+			font-size: 1.225rem;
+		}
+	}
+}
+.footer-container {
+	background: $adobe-dark-gray;
+	color: $soft-gray;
+	text-align: center;
+	height: 200px;
+	padding-top: 30px;
+	-webkit-align-items: center;
+	align-items: center;
+	.footer-column {
+		.footer-icons-wrapper {
+			text-align: center;
+			margin: 0 7px;
+			font-size: 1.8rem;
+			.footer-icon {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	}
+}
+	.copyright {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		font-size: .5rem;
+		text-transform: uppercase;
+	}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.home-footer-container, .footer-container {
+		.footer-column {
+			padding-left: 80px;
+			padding-right: 80px;
+			.footer-icon {
+				font-size: 1.5rem;
+				margin-right: 20px;
+			}
+		}
+	}
+	.home-footer-container {
+		height: 120px;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		.footer-column {
+			.footer-text-home {
+				font-size: .725rem;
+				margin-top: 0;
+			}
+			.footer-email {
+				text-align: right;
+				font-size: 1rem;
+			}
+		}
+	}
+	.footer-container {
+		height: 120px;
+		margin-top: 100px;
+		.footer-column {
+			.footer-icons-wrapper {
+				text-align: left;
+				.footer-icon {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+			.footer-text-wrapper {
+				text-align: right;
+			}
+			.footer-email {
+				text-align: left;
+			}
+		}
+	}
+}

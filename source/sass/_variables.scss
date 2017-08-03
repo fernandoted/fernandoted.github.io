@@ -10,8 +10,12 @@
 	src: url(../../dist/fonts/FjallaOne-Regular.ttf);
 }
 
-@font-face {
+/*@font-face {
 	font-famly: "balboa-plus-fill";
+}*/
+
+@font-face {
+	font-family: "museo-slab";
 }
 
 @font-face {
@@ -23,12 +27,19 @@ font-style: normal;
 font-weight: 400;
 */
 $logo-font: "balboa-plus-fill";
+/*$title-font: "balboa-plus-inline";*/
+$title-font: "museo-slab";
 $text-font: "proxima-nova";
 
 /* colors */
 $white: #FFFFFF;
+$red: #FC001F;
 $dark: #000000;
+$dark-opacity: rgba(0,0,0,0.4);
+$light-gray: #EDEDED;
+$soft-gray: #7F7F7F;
 $dark-gray: #565656;
+$adobe-dark-gray: #282828;
 
 
 /*.white {

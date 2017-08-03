@@ -1,0 +1,105 @@
+/* Blog styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+.posts-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	@extend .col-lg-8;
+	@extend .col-sm-12;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	padding-left: 0;
+	padding-right: 0;
+
+	.main-post-wrapper {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		.img-main-post-home-wrapper {
+			@extend .col-lg-6;
+			@extend .col-sm-12;
+			/*padding-left: 0;
+			padding-right: 0;*/
+
+			.img-main-home-post {
+				max-width: 100%;
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				-webkit-transition: .2s ease-in-out;
+				transition: .2s ease-in-out;
+
+				&:hover {
+					filter: grayscale(0%);
+				}
+			}
+		}
+
+		.main-text-post-wrapper {
+			@extend .col-lg-6;
+			@extend .col-sm-12;
+			/*padding-left: 0;
+			padding-right: 0;*/
+
+			.main-title-blog-wrapper {
+
+				.home-title-blog {
+
+				}
+			}
+		}
+	}
+	.secondary-post-wrapper {
+		@extend .col-lg-6;
+		@extend .col-sm-12;
+		/*padding-left: 0;
+		padding-right: 0;*/
+		margin-top: 40px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+
+		.second-post-img-wrapper {
+			width: 100%;
+
+			.second-post-img {
+				max-width: 100%;
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				-webkit-transition: .2s ease-in-out;
+				transition: .2s ease-in-out;
+
+				&:hover {
+					filter: grayscale(0%);
+				}
+			}
+		}
+		.second-title-blog-wrapper {
+			margin: 0;
+		}
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.posts-container {
+		margin-top: 60px;
+		padding-right: 80px;
+
+		.secondary-post-wrapper {
+			margin-top: 40px;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+
+			.second-title-blog-wrapper {
+				margin: 20px 0;
+			}
+		}
+	}
+}

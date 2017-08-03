@@ -6,19 +6,16 @@
 .mobile-header, .fixed {
 	.menu-wrapper {
 		width: 100%;
-		
 		.menu-list {
-			padding: 20px 0 0 0;
+			padding: 40px 0 20px 0;
 			text-align: center;
-			
 			.menu-item {
-				font-size: 2.125rem;
-				margin-top: 20px;
-				margin-bottom: 20px;
-				
+				font-size: 1.5rem;
+				margin: 10px 0;
 				.menu-link {
 					text-decoration: none;
-					font-family: "balboa-plus-inline"
+					font-family: "museo-slab";
+					font-weight: lighter;
 				}
 			}
 		}
@@ -28,10 +25,38 @@
 .mobile-header {
 	.menu-wrapper {
 		.menu-list {
+			padding-top: 80px;
+			-webkit-display: flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			flex-direction: column;
 			.menu-item {
+				margin-bottom: 40px;
 				.menu-link {
 					color: $white;
 				}
+			}
+		}
+	}
+}
+
+/* IPHONE 5 */
+@media only screen and (min-device-width: 320px) and (min-device-height: 568px) {
+	.mobile-header {
+		.menu-wrapper {
+			.menu-list {
+				padding-top: 130px;
+			}
+		}
+	}
+}
+
+/* IPHONE 6 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+	.mobile-header {
+		.menu-wrapper {
+			.menu-list {
+				padding-top: 190px;
 			}
 		}
 	}
@@ -44,10 +69,15 @@
 			
 			.menu-list {
 				text-align: left;
-				padding-left: 80px;
+				padding-left: 100px;
+				-webkit-display: flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				flex-direction: column;
 				
 				.menu-item {
-					
+					font-size: 1.125rem;
+					margin: 5px 0;
 					.menu-link {
 						
 					}

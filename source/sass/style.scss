@@ -17,6 +17,10 @@
 @import "social";
 @import "links-buttons";
 @import "images";
+@import "topbar";
+@import "blog";
+@import "footer";
+@import "_language";
 
 
 html, body {
@@ -24,7 +28,7 @@ html, body {
 }
 
 body {
-	background: $dark;
+	background: $white;
 }
 
 li {
@@ -37,7 +41,20 @@ li {
 	padding: 0;
 }
 
+.desktop-element {
+	display: none;
+}
+
+.smart-element {
+	display: block;
+}
+
 /* DESKTOP */
 @media screen and (min-width: 769px) {
-	
+	.desktop-element {
+		display: block;
+	}
+	.smart-element {
+		display: none;
+	}
 }
