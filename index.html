@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="pt-br">
 
@@ -14,6 +14,31 @@
     <script src="https://use.fontawesome.com/0ff73496c8.js"></script>
     <script src="https://use.typekit.net/ugc0gdm.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 400;
+            color: #FFFFFF;
+            font-size: 4rem;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        .typed-fade-out{
+            opacity: 0;
+            animation: 0;
+            transition: opacity .25s;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,15 +47,25 @@
     
     	<div class="fixed">
         	<div class="midnightHeader default">
+                <div class="lang-wrapper-home">
+                    <li class="eng lang select">EN</li>
+                    <li class="port lang">PT</li>
+                </div>
                 <!--<div class="logo-wrapper">-->
                 <h1 class="logo">FERNANDO TED</h1>
                 <!--</div>-->
-                <nav class="menu-wrapper">
-                    <ul class="menu-list">
-                        <li class="menu-item"><a href="#" class="menu-link">trabalhos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">conhecimentos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">sobre</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">blog</a></li>
+                <nav class="menu-wrapper top-nav">
+                    <ul class="menu-list nav">
+                        <!-- portuguese -->
+                        <li class="menu-item language" lang="pt-br"><a href="#oquefaco" class="menu-link">o que faço</a></li>
+                        <li class="menu-item language" lang="pt-br"><a href="#projetos" class="menu-link">projetos</a></li>
+                        <li class="menu-item language" lang="pt-br"><a href="#about" class="menu-link">sobre</a></li>
+                        <li class="menu-item language" lang="pt-br"><a href="#blog" class="menu-link">blog</a></li>
+                        <!-- english -->
+                        <li class="menu-item language" lang="eng"><a href="#oquefaco" class="menu-link">what I do</a></li>
+                        <li class="menu-item language" lang="eng"><a href="#projetos" class="menu-link">projects</a></li>
+                        <li class="menu-item language" lang="eng"><a href="#about" class="menu-link">about</a></li>
+                        <li class="menu-item language" lang="eng"><a href="#blog" class="menu-link">blog</a></li>
                     </ul>
                 </nav>
                 
@@ -43,104 +78,257 @@
             </div>
         </div>
         
-        <div class="mobile-header">
-            <!--<div class="logo-wrapper">-->
-            <h1 class="logo">FERNANDO TED</h1>
-            <!--</div>-->
-            <nav class="menu-wrapper">
-                <ul class="menu-list">
-                    <li class="menu-item"><a href="#" class="menu-link">trabalhos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">sobre</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">blog</a></li>
-                </ul>
-            </nav>
-            <div class="social-wrapper-desktop">
+    	<div class="section-container bg-home" data-midnight="white">
+            <div class="mobile-header">
+                <div class="lang-wrapper-home">
+                    <li class="eng lang select">EN</li>
+                    <li class="port lang">PT</li>
+                </div>
+                <div class="social-wrapper-desktop">
                     <a href="#" class="social-link"><i class="social-icon fa fa-linkedin" aria-hidden="true"></i></a>
                     <a href="#" class="social-link"><i class="social-icon fa fa-github" aria-hidden="true"></i></a>
                     <a href="#" class="social-link"><i class="social-icon fa fa-behance" aria-hidden="true"></i></a>
                 </div>
+                <h1 class="logo">FERNANDO TED</h1>
+                <div class="mobile-present-wrapper">
+                    <p class="text language" lang="pt-br">Posso te ajudar com front-end, web design, UX e UI, um pouco de fotografia, ilustração e vídeo. E, claro, boa bontade e boas idéias</p>
+
+                    <p class="text language" lang="eng">I can help you with front-end, web design, UX and UI, a little of ohotography, illustration and video. And, of course, good will and good ideas.</p>
+                    <a href="#mobile-menu"><i class="fa fa-angle-down angle-down-mobile-button"></i></a>
+                </div>
+                <nav class="menu-wrapper top-nav">
+                    <ul class="menu-list nav" id="mobile-menu">
+                        <!-- portuguese -->
+                        <li class="menu-item language" lang="pt-br"><a href="#oquefaco" class="menu-link scroll">o que faço</a></li>
+                        <li class="menu-item language" lang="pt-br"><a href="#projetos" class="menu-link">trabalhos</a></li>
+                        <li class="menu-item language" lang="pt-br"><a href="#about" class="menu-link">sobre</a></li>
+                        <li class="menu-item language" lang="pt-br"><a href="#blog" class="menu-link">blog</a></li>
+                        <!-- english -->
+                        <li class="menu-item language" lang="eng"><a href="#oquefaco" class="menu-link scroll">what i do</a></li>
+                        <li class="menu-item language" lang="eng"><a href="#projetos" class="menu-link">projects</a></li>
+                        <li class="menu-item language" lang="eng"><a href="#about" class="menu-link">about</a></li>
+                        <li class="menu-item language" lang="eng"><a href="#blog" class="menu-link">blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="animated-text-wrapper">
+                <!--<p class="language" lang="pt-br">Posso ajudá-lo em seu projeto com</p>-->
+                <p>I can help you with</p>
+                <span class="type-english"></span>
+                <!--<span class="type-portuguese language" lang="pt-br"></span>-->
+            </div>   
         </div>
-        
-    	<div class="bg-home-container" data-midnight="white"></div>
 
-        <!-- div.projects-container -->
+        <!-- back to top button -->
+        <button class="back-top" type="button"></button>
 
+        <!-- O QUE FAÇO -->
+        <div id="oquefaco" class="section-container specif-bg d-flex justify-content-end" data-midnight="dark">
+            <div class="section-title-wrapper">
+                <h2 class="section-title language" lang="eng">WHAT I DO</h2>
+                <h2 class="section-title language" lang="pt-br">O QUE FAÇO</h2>
+            </div>
+            <div class="text-wrapper">
+                <p class="text text-color-white-bg language" lang="pt-br">Websites bem feitos, fáceis de usar e esteticamente bonitos, respeitando conceitos de responsividade e acessibilidade, o que inclui os conhecimentos descritos.</p>
 
-        <!-- about -->
-    	<div class="content-container about-bg" data-midnight="dark">
-        	<div class="text-content-wrapper">
-                <div class="title-section-wrapper">
-                    <h2 class="title-section">About Title</h2>
+                <h3 class="section-subtitle language" lang="pt-br">Desenvolvimento Front-end</h3>
+                <p class="text text-color-white-bg language" lang="pt-br">Desenvolvimento com <b>HTML</b>, <b>CSS</b>, com pré-processadores como <b>Sass</b> e <b>Less</b>. Frameworks como <b>Bootstrap</b> e <b>Foundation</b>. <b>JavaScript</b> e <b>jQuery</b>. <b>SVG</b>, <b>Jekyll</b>, gerenciadores e automatizadores de tarefas como <b>Gulp</b>, <b>Grunt</b> e <b>Bower</b>. <b>Git</b> e <b>Github</b>. E <b>Wordpress</b>, customizando e desenvolvendo temas.</p>
+
+                <h3 class="section-subtitle language" lang="pt-br">Web Design</h3>
+                <p class="text text-color-white-bg language" lang="pt-br">Design de websites e aplicativos, com protótipos normalmente desenvolvidos com <b>Adobe Xd</b>, além de usar outros aplicativos como <b>Photoshop</b>, <b>Illustrator</b> e, claro, lápis e papel.</p>
+
+                <h3 class="section-subtitle language" lang="pt-br">UX / UI</h3>
+                <p class="text text-color-white-bg language" lang="pt-br">Definição da experiência do usuário, como ele irá interagir com a página, como a informação estará disposta e lhe será apresentada.</p>
+
+                <h3 class="section-subtitle language" lang="pt-br">E...</h3>
+                <p class="text text-color-white-bg language" lang="pt-br">Tenho forte apreço por <b>fotografia</b>, <b>ilustração</b> e <b>vídeo</b>. Mesmo não sendo o foco do meu trabalho, muitas vezes me ajuda bastante ter esse conhecimento. Para fotos costumo utilizar o <b>Lightroom</b> e <b>Photoshop</b>, e para vídeos o Premiere e um pouco de <b>After Effects</b>.</p>
+
+                <p class="text text-color-white-bg language" lang="eng">Well done websites, easy to use and aesthetically beautiful, respecting accessibility and responsive concepts, that includes the follow skills.</p>
+
+                <h3 class="section-subtitle language" lang="eng">Front-end Development</h3>
+                <p class="text text-color-white-bg language" lang="eng"><b>HTML</b>, <b>CSS</b>, with pre-processor as <b>Sass</b> and <b>Less</b>. Frameworks as <b>Bootstrap</b> and <b>Foundation</b>. <b>JavaScript</b> and <b>jQuery</b>. <b>SVG</b>, <b>Jekyll</b>, task manager as <b>Gulp</b>, <b>Grunt</b> and <b>Bower</b>. <b>Git</b> and <b>Github</b>. <b>Wordpress</b>, customizing and developing themes.</p>
+
+                <h3 class="section-subtitle language" lang="eng">Web Design</h3>
+                <p class="text text-color-white-bg language" lang="eng">Websites and Applications design, with prototypes usually developed with <b>Adobe Xd</b>, and softwares as <b>Photoshop</b>, <b>Illustrator</b> and, of course, pencil and paper.
+
+                <h3 class="section-subtitle language" lang="eng">UX / UI</h3>
+                <p class="text text-color-white-bg language" lang="eng">User experience definition, how they interact with the page, how the informations is disposed and how to show this information.</p>
+
+                <h3 class="section-subtitle language" lang="eng">And...</h3>
+                <p class="text text-color-white-bg language" lang="eng">I apreciate photography, illustration and video. Despite this areas is not the focuses of my work, have a little knowledge around this helps me a lot.</p>
+
+            </div> <!-- text-wrapper - portuguese -->
+
+            <div class="resume-wrapper">
+                <!--<h3 class="section-subtitle  text-color-white-bg language" lang="pt-br">CURRÍCULO</h3>
+                <h3 class="section-subtitle  text-color-white-bg language" lang="eng">RESUME</h3>-->
+                <div class="download-button-wrapper">
+                    <a class="download-button language" lang="pt-br">baixar currículo</a>
+                    <a class="download-button language" lang="eng">download resume</a>
                 </div>
-                <div class="text-wrapper">
-                    <p class="text text-color-white-bg">Variadas foram as experiências que tive até me encontrar no vasto universo da web, onde atuo como desenvolvedor. Entretanto (Porém) (mas), mais que um dev, me considero um entusiasta da tecnologia e da internet, que está aí para melhorar nossas vidas.<br><br>
+                <!--<p class="obs-text language" lang="pt-br">Baixe ou visualize meu currículo.</p>
+                <p class="obs-text language" lang="eng">Download or view my resume</p>-->
+            </div>
+        </div>
 
-Entre essas mudanças, está a facilidade de se desenvolver projetos com parceiros e clientes à distancia, e a possibilidade de produzir de qualquer lugar, bastando apensa uma conexão de internet (rede).<br>
-
-Atualmente residindo em Ubatuba, litoral de São Paulo, Brasil, me habituei ao formato home-office de trabalho, vivendo na prática seus desafios e benefícios.<br><br>
-
-Há um mundo em ebulição dentro das telas de computadores, smartphones e tablets. Estamos cada vez mais familiarizados e aptos a explorar o que esse poderoso recurso nos oferece. E é onde posso ajudar. Sempre atento às novas práticas e tendências da web, buscando aperfeiçoar a linguagem visual, e mergulhando em cada projeto como se fosse o único.</p>
+        <!-- PROJECTS -->
+        <div id="projetos" class="section-container projects-bg d-flex justify-content-end" data-midnight="white">
+            <div class="section-title-wrapper">
+                <h2 class="section-title text-color-dark-bg language" lang="pt-br">PROJETOS</h2>
+                <h2 class="section-title text-color-dark-bg language" lang="eng">PROJECTS</h2>
+                <p class="title-complement language" lang="pt-br"><i>Veja um pouco mais de alguns dos meus trabalhos mais recentes.</i></p>
+                <p class="title-complement language" lang="eng"><i>Take a look at some of my most recent jobs.</i></p>
+            </div>
+            
+            <div class="projects-list-wrapper">
+                <div class="projects-item">
+                    <a class="project-link" href="project-01.html"><img class="project-logo" src="dist/img/logo-pizzaria-sp.png" alt="logo pizzaria são paulo"></a>
                 </div>
-            </div> <!-- about-content-wrapper -->
-    	</div> <!-- about container -->
-        
-        <div class="content-container infos-bg" data-midnight="white">
-        	<div class="text-content-wrapper">
-                <div class="title-section-wrapper">
-                    <h2 class="title-section text-color-dark-bg">INFLUÊNCIAS</h2>
+                <div class="projects-item">
+                    <a class="project-link" href="project-02.html"><img class="project-logo" src="dist/img/logo-cannelle.png" alt="logo cannelle"></a>
                 </div>
-                <div class="text-wrapper">
-                    <p class="text text-color-dark-bg">Wired Magazine, David Carson, Cultura Californiana, J. Carlos, Laerte, Angeli, Fabrício Teixeira, Bauhaus, Shigeo Fukuda, Banksy. </p>
+                <div class="projects-item">
+                    <a class="project-link" href="project-03.html"><img class="project-logo" src="dist/img/logo-recanto-horiz.png" alt="logo recanto das palmeiras"></a>
+                </div>
+                <div class="projects-item">
+                    <a class="project-link-coop" href="project-03.html"><img class="project-logo" src="dist/img/logo-coop.png" alt="logo cooperativa educacional ubatuba"></a>
+                </div>
+                <div class="projects-item">
+                    <a height="83" width="247" class="project-link" href="project-05.html"><img src="dist/img/logo-flowsupply.png" alt="" class="project-logo"></a>
+                </div>
+                <div class="projects-item">
+                    <a height="184" width="479" class="project-link" href="project-06.html"><img src="dist/img/logo-opiniao.png" alt="" class="project-logo"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ABOUT -->
+    	<div id="about" class="section-container about-bg d-flex justify-content-end" data-midnight="dark">
+        	<div class="section-title-wrapper">
+                <h2 class="section-title text-color-white-bg language" lang="pt-br">SOBRE</h2>
+                <h2 class="section-title text-color-white-bg language" lang="eng">ABOUT</h2>
+            </div>
+            <div class="text-wrapper">
+                <p class="text text-color-white-bg language" lang="eng">I had various professional experiences before discover the web universe, some years ago, where I identified myself with front-end. However, more than a developer, I’m a internet and technology enthusiast in general, with all the benefits that make the modern life better and easier. Novelty as share houses and cars, creation of virtual money, the possibility to work from any place of the world with people from anywhere…   all of this too much seductive and innovative, with the fundamental role of technology.
+                <br><br>
+                Since I was young, the design aways caught my attention, first with free-hand drawing, and after with my graduation, and today I can say that I’m aways watching form, function and “why’s” in all the things. With web could not be different, even because it’s a good territory to apply the knowledge and influences accumulated throughout my life. Among these influences I’d like to mention David Carson, Wired magazine and the whole Californian culture, Banksy, some Brazilian developers like Willian Justen, Diego Eis, Dani Guerrato and Maujor, Grunge music, Miles Davis and others. Currently live in Ubatuba, a small city in the coast of São Paulo, Brazil, where I collaborate to disseminate the internet culture and the use of digital media.</p>
+
+                <p class="text text-color-white-bg language" lang="pt-br">Tive variadas experiências profissionais até me encontrar no universo da web, alguns anos atrás, onde rapidamente me identifiquei com a área de front-end. Entretanto, mais que um desenvolvedor, me considero um entusiasta da internet e da tecnologia de maneira geral, com todos os seus benefícios que tornam a vida moderna melhor e mais fácil. Novidades como compartilhamento de casas, carros, criação de moedas virtuais, tudo muito sedutor e inovador, e com papel fundamental da tecnologia. Entre essas novidades, uma das que mais me cativa é a possibilidade de trabalhar para qualquer lugar do mundo, de qualquer lugar do mundo.
+                <br><br>
+                Desde muito pequeno o design sempre ganhou minha atenção, primeiramente com o desenho a mão livre, posteriormente em minha formação acadêmica, e hoje posso dizer que me atento à forma, função e seus “porques” em tudo que vejo e presencio. Com web não poderia ser diferente, mesmo porque é um território formidável para aplicar muitos conhecimentos e influencias acumulados ao longo da vida. E dentre essas influências, gosto de citar David Carson, a revista Wired, assim como toda cultura californiana, Banksy, Atualmente resido em Ubatuba, pequena cidade do litoral de São Paulo, Brasil, onde contribuo para disseminar a cultura de internet e o uso dos meios digitais.</p>
+            </div> <!-- text-wrapper -->
+    	</div> <!-- section-container -->
+
+        <!-- BLOG -->
+        <div id="blog" class="section-container projects-bg d-flex justify-content-end text-color-dark-bg" data-midnight="white">
+            <div class="section-title-wrapper">
+                <h2 class="section-title text-color-dark-bg">BLOG</h2>
+                <p class="title-complement text-color-dark-bg language" lang="pt-br">Algumas reflexões sobre a área de web, design, trabalho home-office, traduções de artigos ou qualquer outra coisa.</p>
+
+                <p class="title-complement text-color-dark-bg language" lang="eng">Some reflections about web, design, home-office, translations or anything else.</p>
+            </div>
+            <div class="posts-container">
+                <div class="main-post-wrapper">
+                    <div class="main-text-post-wrapper">
+                        <div class="main-title-blog-wrapper">
+                            <h3 class="home-title-blog">
+                                TÍTULO DA MATÉRIA DO BLOG
+                            </h3>
+                        </div>
+                        <div class="exerpt-wrapper">
+                            <p class="exerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis augue vel purus sollicitudin vulputate. Nullam molestie placerat ornare. Nulla maximus eleifend metus a maximus. Nulla eleifend, risus sed dapibus aliquam, diam diam viverra mi, sed vulputate lacus nunc vitae felis.</p>
+                        </div>
+                        <div class="button-read-more-wrapper">
+                            <button class="read-more">leia mais</button>
+                        </div>
+                    </div>
+                    <div class="img-main-post-home-wrapper">
+                        <img src="dist/img/img-blog-home-01.jpg" alt="main post image" class="img-main-home-post">
+                    </div>
+                </div>
+
+                <div class="secondary-post-wrapper">
+                    <div class="second-post-img-wrapper">
+                        <img src="dist/img/img-blog-home-02.jpg" alt="secondary post image" class="second-post-img">
+                    </div>
+                    <div class="second-title-blog-wrapper">
+                        <h3 class="home-title-blog">
+                            TÍTULO DA MATÉRIA DO BLOG
+                        </h3>
+                    </div>
+                    <div class="exerpt-wrapper">
+                        <p class="exerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis augue vel purus sollicitudin vulputate. Nullam molestie placerat ornare. Nulla maximus eleifend metus a maximus. Nulla eleifend, risus sed dapibus aliquam, diam diam viverra mi, sed vulputate lacus nunc vitae felis.</p>
+                    </div>
+                    <div class="button-read-more-wrapper">
+                        <button class="read-more">leia mais</button>
+                    </div>
+                </div>
+
+                <div class="secondary-post-wrapper">
+                    <div class="second-post-img-wrapper">
+                        <img src="dist/img/img-blog-home-03.jpg" alt="secondary post image" class="second-post-img">
+                    </div>
+                    <div class="second-title-blog-wrapper">
+                        <h3 class="home-title-blog">
+                            TÍTULO DA MATÉRIA DO BLOG
+                        </h3>
+                    </div>
+                    <div class="exerpt-wrapper">
+                        <p class="exerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis augue vel purus sollicitudin vulputate. Nullam molestie placerat ornare. Nulla maximus eleifend metus a maximus. Nulla eleifend, risus sed dapibus aliquam, diam diam viverra mi, sed vulputate lacus nunc vitae felis.</p>
+                    </div>
+                    <div class="button-read-more-wrapper">
+                        <button class="read-more">leia mais</button>
+                    </div>
                 </div>
                 
-                <div class="title-section-wrapper">
-                    <h2 class="title-section text-color-dark-bg">LOCALIDADE</h2>
-                </div>
-                <div class="text-wrapper text-color-dark-bg">
-                    <p class="text">Atualmente residindo em Ubatuba, litoral de São Paulo, Brasil, me habituei ao formato home-office de trabalho, vivendo na prática seus desafios e benefícios.</p>
-                </div>
-                
-                <div class="title-section-wrapper">
-                    <h2 class="title-section text-color-dark-bg">CURRÍCULO</h2>
-                </div>
-                <div class="resume-button-wrap">
-                	<a class="download-button">download</a>
-                </div>
-            </div> <!-- text-content-wrapper -->
-        </div> <!-- infos-bg -->
-        
-        <div class="content-container offer-bg" data-midnight="dark">
-        	<div class="text-content-wrapper">
-                <div class="title-section-wrapper">
-                    <h2 class="title-section text-color-white-bg">O QUE FAÇO</h2>
-                </div>
-                <div class="text-wrapper text-color-white-bg">
-                    <p class="text">Atualmente residindo em Ubatuba, litoral de São Paulo, Brasil, me habituei ao formato home-office de trabalho, vivendo na prática seus desafios e benefícios.</p>
-                </div>
-                <div class="icon-wrapper">
-                	<img class="offer-icon" src="dist/img/icons/code-icon.png" alt="code icon">
-                </div>
-                <div class="text-wrapper">
-                	<p class="text">Atualmente residindo em Ubatuba, litoral de São Paulo, Brasil, me habituei ao formato home-office de trabalho, vivendo na prática seus desafios e benefícios.</p>
-                </div>
-                <div class="icon-wrapper">
-                	<img class="offer-icon" src="dist/img/icons/smart-icon.png" alt="smartphone icon">
-                </div>
-                <div class="text-wrapper">
-                	<p class="text">Atualmente residindo em Ubatuba, litoral de São Paulo, Brasil, me habituei ao formato home-office de trabalho, vivendo na prática seus desafios e benefícios.</p>
-                </div>
+            </div>
+        </div>
+
+        <div class="home-footer-container" data-midnight="dark">
+            <div class="footer-column col-sm-12 col-md-6">
+                <p class="footer-text-home language" lang="pt-br">Se está interessado em trabalhar comigo, saber um pouco mais, falar sobre algum artigo publicado, algum tipo de ajuda que eu possa atender ou simplesmente bater um papo, entre em contato. Além do Linkedin, Github e Behance, você pode usar o meu skype ou meu e-mail para contato.</p>
+
+                <p class="footer-text-home language" lang="eng">If you’re interesting in work with me, know a little more, talk about some article, something that I can help, or just chat, contact me. Beside LinkedIn, Github and Behance, you can Skype or mail me.</p>
+            </div>
+            <div class="footer-column col-sm-12 col-md-6">
+                <p class="footer-email">fernandoted@icloud.com</p>
+                <!-- <a class="footer-skype"><i class="fa fa-skype skype-footer-icon"></i>Fernando Ted</a> -->
             </div>
         </div>
     
     </div> <!-- container-full -->
-    
+
     <script src="dist/js/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/viewport-units-buggyfill.js"></script>
-    <!--<script src="dist/js/app.js"></script>-->
     <script src="dist/js/midnight.jquery.min.js"></script>
-    
+    <script src="dist/js/typed.js"></script>
+    <script src="dist/js/app.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate(scrollTop:$(this.hash).offset().top}, 800);
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var typed = new Typed(".type-english", {
+                strings: ["^800front-end^1000, web-design...^1000", "^500UX and UI... ^1000","a little of movie maker ^1000", "photography...^1000", "and illustration... ^1000", "and,^500 of course^500, good will... ^1000", "and...^1000", "^1000good ideas ^800! "],
+                typeSpeed: 40,
+                backSpeed: 40,
+                backDelay: 500,
+                startDelay: 250,
+                fadeOut: false,
+                contentType: 'html'
+            });
+        });
+    </script>
+
     <script>
     	$(document).ready(function(){
 		  // vh fix for iOS7 (Not that it works well on that anyway)

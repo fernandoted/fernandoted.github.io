@@ -57,3 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# mockup material
+psd-Mockups/
+old/
+notes.rtf
+texts.rtf
+
