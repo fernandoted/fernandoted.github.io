@@ -42,15 +42,6 @@ $(document).ready(function() {
 	});
 });
 
-/* test scroll mobile menu */
-// $(document).ready(function() {
-// 	$(".scroll").click(function(event) {
-// 		event.preventDefault();
-// 		$("html, body").animate(scrollTop:$(this.hash).offset().top}, 800);
-// 	});
-// });
-
-
 /* back to top button */
 var amountScrolled = 200;
 var amountScrolledNav = 25;
