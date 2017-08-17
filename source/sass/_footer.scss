@@ -21,9 +21,17 @@
 	// color: $soft-gray;
 	background: $adobe-dark-gray;
 	color: $soft-gray;
-	-webkit-flex-direction: column-reverse;
-	flex-direction: column-reverse;
+	// -webkit-flex-direction: column-reverse;
+	// flex-direction: column-reverse;
 	padding-top: 20px;
+	.footer-column:first-child {
+		-webkit-order: 2;
+		order: 2;
+	}
+	.footer-column:last-child {
+		-webkit-order: 3;
+		order: 3;
+	}
 	.footer-column {
 		.footer-text-home {
 			font-size: .9rem;
@@ -34,6 +42,17 @@
 		.footer-email {
 			text-align: center;
 			font-size: 1.225rem;
+		}
+		.footer-github {
+			text-align: center;
+			font-size: .725rem;
+			a {
+				color: #CCCCCC;
+				&:hover {
+					color: $white;
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }
@@ -48,11 +67,21 @@
 	.footer-column {
 		.footer-icons-wrapper {
 			text-align: center;
-			margin: 0 7px;
+			// margin: 0 7px;
 			font-size: 1.8rem;
-			.footer-icon {
-				padding-left: 10px;
-				padding-right: 10px;
+			.footer-link {
+				color: $soft-gray;
+				-webkit-transition: .2s ease-in-out;
+				-moz-transition: .2s ease-in-out;
+				-o-transition: .2s ease-in-out;
+				transition: .2s ease-in-out;
+				&:hover {
+					color: $white;
+				}
+				.footer-icon {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
 			}
 		}
 	}
@@ -77,9 +106,17 @@
 		}
 	}
 	.home-footer-container {
-		height: 120px;
+		// height: 120px;
 		-webkit-flex-direction: row;
 		flex-direction: row;
+		.footer-column:first-child {
+			-webkit-order: -1;
+			order: -1;
+		}
+		.footer-column:last-child {
+			-webkit-order: 3;
+			order: 3;
+		}
 		.footer-column {
 			.footer-text-home {
 				font-size: .725rem;
@@ -88,7 +125,7 @@
 			.footer-email {
 				text-align: right;
 				font-size: 1rem;
-			}
+			}	
 		}
 	}
 	.footer-container {
@@ -97,9 +134,11 @@
 		.footer-column {
 			.footer-icons-wrapper {
 				text-align: left;
-				.footer-icon {
-					padding-left: 0;
-					padding-right: 0;
+				.footer-link {
+					.footer-icon {
+						padding-left: 0;
+						padding-right: 0;
+					}
 				}
 			}
 			.footer-text-wrapper {

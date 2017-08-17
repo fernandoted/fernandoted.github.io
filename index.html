@@ -161,8 +161,8 @@
 
             <div class="resume-wrapper">
                 <div class="download-button-wrapper">
-                    <a href="dist/assets/curriculo-fernando-ted.pdf" class="download-button language" lang="pt-br">baixar currículo</a>
-                    <a href="dist/assets/curriculo-fernando-ted.pdf" class="download-button language" lang="eng">download resume</a>
+                    <a href="dist/assets/curriculo-fernando-ted.pdf" class="download-button language" lang="pt-br" target="_blank">baixar currículo</a>
+                    <a href="dist/assets/curriculo-fernando-ted.pdf" class="download-button language" lang="eng" target="_blank">download resume</a>
 
                 </div>
             </div>
@@ -292,6 +292,9 @@
                 <p class="footer-email">fernandoted@icloud.com</p>
                 <!-- <a class="footer-skype"><i class="fa fa-skype skype-footer-icon"></i>Fernando Ted</a> -->
             </div>
+            <div class="footer-column col-12">
+                <p class="footer-github">Visit this project on <a href="https://github.com/fernandoted/fernandoted.github.io" target="_blank">Github</a></p>
+            </div>
         </div>
     
     </div> <!-- container-full -->
@@ -307,7 +310,7 @@
         $(document).ready(function() {
             $(".scroll").click(function(event) {
                 event.preventDefault();
-                $("html, body").animate(scrollTop:$(this.hash).offset().top}, 800);
+                $("html, body").animate(scrollTop:$(this.hash).offset().top, 800);
             });
         });
     </script>

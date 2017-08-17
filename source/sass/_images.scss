@@ -62,6 +62,30 @@
 
 /* DESKTOP */
 @media screen and (min-width: 769px) {
+	.project-section {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-top: 100px;
+		.mobile-img-wrapper {
+			margin-left: 80px;
+			.mobile-img-iphone {
+				width: 380px;
+			}
+			.mobile-img-iphone2 {
+				width: 300px;
+				margin-left: 80px;
+			}
+		}
+		.desktop-screen-container {
+			margin-top: 100px;
+			.project-site-link-wrapper {
+				margin: 0;
+			}
+		}
+	}
+
 	.mobile-img-container {
 		display: block;
 		display: -webkit-flex;
@@ -76,6 +100,9 @@
 		.mobile-img-wrapper {
 			.mobile-img {
 				width: 250px;
+			}
+			.mobile-img-iphone {
+				width: 400px;
 			}
 		}
 	}
