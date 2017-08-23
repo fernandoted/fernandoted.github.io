@@ -3,7 +3,7 @@
 // 03-03-17
 
 /* language */
-$(document).ready(function() {
+/*$(document).ready(function() {
      $(".language[lang='pt-br']").hide();
      $(".eng").click(function(){
            $(".eng").addClass("select");
@@ -16,6 +16,22 @@ $(document).ready(function() {
            $(".eng").removeClass("select");
            $(".language[lang=pt-br]").show();
            $(".language[lang=eng]").hide();
+    });
+});*/
+
+$(document).ready(function() {
+     $(".language[lang='eng']").hide();
+     $(".port").click(function(){
+           $(".port").addClass("select");
+           $(".eng").removeClass("select");
+           $(".language[lang=pt-br]").show();
+           $('.language[lang=eng]').hide();
+        });
+        $(".eng").click(function(){
+           $(".eng").addClass("select");
+           $(".port").removeClass("select");
+           $(".language[lang=eng]").show();
+           $(".language[lang=pt-br]").hide();
     });
 });
 
