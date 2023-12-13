@@ -1,0 +1,97 @@
+/* Logo styles of Fernando Ted personal website - fernandoted.github.io
+   https://github.com/fernandoted
+   03-03-17
+*/
+
+.logo-wrapper {
+	border: 2px solid #000;
+	border-radius: 7px;
+	padding: 5px 10px;
+	width: fit-content;
+	height: fit-content;
+	margin-top: 80px;
+	margin-left: 100px;
+	.logo {
+		color: #000;
+		font-family: $logo-font;
+		margin-bottom: 0;
+	}
+}
+// .mobile-header, .fixed {
+// 	.logo {
+// 		text-align: center;
+// 		display: block;
+// 		font-family: $logo-font;
+// 		padding-top: 60px;
+// 		/*color: $white;*/
+// 	}
+// }
+
+// .mobile-header {
+// 	.logo {
+// 		color: $white;
+// 		font-size: 2.725rem;
+// 	}
+// }
+
+// .footer-logo-wrapper {
+// 	text-align: center;
+// 	.logo {
+// 		font-family: $logo-font;
+// 		font-size: 2rem;
+// 	}
+// }
+
+// .midnightHeader.default .logo,
+// .midnightHeader.white .logo {
+// 	color: $white;
+// 	opacity: .8;
+// }
+// // .midnightHeader.default .lang-wrapper .lang,
+// .midnightHeader.white .lang-wrapper .lang,
+// .midnightHeader.white .lang-wrapper-home .lang,
+// .midnightHeader.white .menu-wrapper .menu-list .menu-item .menu-link,
+// .midnightHeader.white .social-wrapper-desktop .social-link .social-icon {
+// 	color: $white;
+// 	opacity: .8;
+// 	&:hover {
+// 		opacity: 1;
+// 	}
+// }
+
+// .midnightHeader.dark .logo {
+// 	color: $dark;
+// 	opacity: .8;
+// }
+// .midnightHeader.dark .menu-wrapper .menu-list .menu-item .menu-link {
+// 	color: $dark;
+// 	opacity: .9;
+// 	&:hover {
+// 		opacity: 1;
+// 	}
+// }
+// .midnightHeader.dark .lang-wrapper .lang,
+// .midnightHeader.dark .social-wrapper-desktop .social-link .social-icon {
+// 	color: $dark;
+// 	opacity: .8;
+// 	&:hover {
+// 		opacity: 1;
+// 	}
+// }
+
+// /* DESKTOP */
+// @media screen and (min-width: 769px) {
+// 	.mobile-header, .fixed {
+// 		.logo {
+// 			text-align: left;
+// 			font-size: 2.225rem;
+// 			padding: 100px 0 0 80px;
+// 		}
+// 	}
+// 	.footer-logo-wrapper {
+// 		text-align: right;
+// 		.logo {
+// 			font-size: 3rem;
+// 		}
+// 	}
+// }

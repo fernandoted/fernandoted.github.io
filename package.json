@@ -1,0 +1,39 @@
+{
+  "name": "fernandoted.github.io",
+  "version": "1.0.0",
+  "description": "personal website of web developer Fernando Ted",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandoted/fernandoted.github.io.git"
+  },
+  "keywords": [
+    "web",
+    "develop",
+    "web",
+    "design",
+    "front",
+    "end",
+    "website"
+  ],
+  "author": "Fernando Ted <fernandoted@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fernandoted/fernandoted.github.io/issues"
+  },
+  "homepage": "https://github.com/fernandoted/fernandoted.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "gulp-cli": "^2.3.0"
+  }
+}
