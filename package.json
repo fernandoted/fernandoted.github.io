@@ -28,9 +28,12 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-notify": "^4.0.0",
-    "gulp-sass": "^5.1.0"
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5"
   },
   "dependencies": {
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "gulp-cli": "^2.3.0"
   }
 }
