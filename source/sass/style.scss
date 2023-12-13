@@ -26,8 +26,18 @@ html, body {
 	height: 100%;
 }
 
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 body {
 	background: $white;
+}
+
+h1 {
+	margin: 0;
 }
 
 li {
@@ -35,7 +45,7 @@ li {
 }
 
 .container-full {
-	@extend .container-fluid;
+	// @extend .container-fluid;
 	margin: 0;
 	padding: 0;
 }

@@ -1,3 +1,29 @@
+/* fonts */
+@font-face {
+	font-family: "FjallaOne";
+	src: url(../../dist/fonts/FjallaOne-Regular.ttf);
+}
+
+/*@font-face {
+	font-famly: "balboa-plus-fill";
+}*/
+
+@font-face {
+	font-family: "museo-slab";
+}
+
+@font-face {
+	font-family: "proxima-nova";
+}
+/*
+font-family: balboa-plus-fill, sans-serif;
+font-style: normal;
+font-weight: 400;
+*/
+/*$title-font: "balboa-plus-inline";*/
+$title-font: "museo-slab";
+$text-font: "proxima-nova";
+
 $logo-font: "balboa-plus-fill";
 
 /* colors */
