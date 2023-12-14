@@ -17,7 +17,8 @@
 @import "social";
 // @import "links-buttons";
 @import "images";
-// @import "topbar";
+@import "topbar";
+@import "typography";
 // @import "footer";
 // @import "_language";
 
@@ -48,6 +49,10 @@ li {
 	// @extend .container-fluid;
 	margin: 0;
 	padding: 0;
+}
+
+.content-wrapper {
+	width: 100%;
 }
 
 .desktop-element {

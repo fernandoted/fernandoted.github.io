@@ -5,16 +5,20 @@
 
 .section-container {
 	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
 	display: flex;
+	flex-direction: column;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	padding-left: 0;
 	padding-right: 0;
 }
 
 .bg-home {
 	background-color: #e8bf29;
-	height: 960px;
+	// height: 960px;
 	// background: url(../../dist/img/home-bg-smart-01.jpg);
 }
 

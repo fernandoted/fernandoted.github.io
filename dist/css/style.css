@@ -46,15 +46,18 @@ font-weight: 400;
 */
 .section-container {
   width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 0;
   padding-right: 0; }
 
 .bg-home {
-  background-color: #e8bf29;
-  height: 960px; }
+  background-color: #e8bf29; }
 
 .specif-bg {
   background: url(../../dist/img/about-bg-smart-01.jpg) no-repeat;
@@ -243,8 +246,13 @@ font-weight: 400;
   .project-subtitle {
     text-align: left; } }
 
-.social-icon {
-  color: #000; }
+.social-wrapper-desktop {
+  margin-top: 80px;
+  margin-right: 100px; }
+  .social-wrapper-desktop .social-icon {
+    color: #000;
+    font-size: 2rem;
+    margin-right: 1rem; }
 
 /* Backgrounds styles of Fernando Ted personal website - fernandoted.github.io
    https://github.com/fernandoted
@@ -342,6 +350,19 @@ font-weight: 400;
   .desktop-smart-image-container .desktop-smart-image-wrapper {
     display: none; } }
 
+.topbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.trefoilLink-wrapper {
+  width: 100%;
+  margin-left: 100px;
+  margin-bottom: 60px; }
+  .trefoilLink-wrapper .trefoilLink {
+    color: #282828;
+    font-size: 6rem; }
+
 html, body {
   height: 100%; }
 
@@ -362,6 +383,9 @@ li {
 .container-full {
   margin: 0;
   padding: 0; }
+
+.content-wrapper {
+  width: 100%; }
 
 .desktop-element {
   display: none; }
