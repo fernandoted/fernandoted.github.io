@@ -69,6 +69,7 @@ li {
 		flex-direction: column;
 		align-items: center;
 		.logo-wrapper {
+			font-size: 3rem;
 			margin-left: 0;
 		}
 		.social-wrapper-desktop {
@@ -86,17 +87,8 @@ li {
 		.trefoilLink-wrapper {
 			width: fit-content;
 			margin-left: 0;
+			margin-bottom: 150px;
 			// margin-top: 60px;
 		}
-	}
-}
-
-/* DESKTOP */
-@media screen and (min-width: 769px) {
-	.desktop-element {
-		display: block;
-	}
-	.smart-element {
-		display: none;
 	}
 }

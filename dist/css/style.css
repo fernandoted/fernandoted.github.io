@@ -399,6 +399,7 @@ li {
     flex-direction: column;
     align-items: center; }
     .topbar-wrapper .logo-wrapper {
+      font-size: 3rem;
       margin-left: 0; }
     .topbar-wrapper .social-wrapper-desktop {
       width: 100%;
@@ -411,11 +412,5 @@ li {
     justify-content: center; }
     .content-wrapper .trefoilLink-wrapper {
       width: fit-content;
-      margin-left: 0; } }
-
-/* DESKTOP */
-@media screen and (min-width: 769px) {
-  .desktop-element {
-    display: block; }
-  .smart-element {
-    display: none; } }
+      margin-left: 0;
+      margin-bottom: 150px; } }
