@@ -40,6 +40,10 @@ font-weight: 400;
     font-family: "balboa-plus-fill";
     margin-bottom: 0; }
 
+@media screen and (max-width: 769px) {
+  .logo-wrapper .logo {
+    font-size: 3rem; } }
+
 /* Backgrounds styles of Fernando Ted personal website - fernandoted.github.io
    https://github.com/fernandoted
    03-03-17
@@ -367,6 +371,8 @@ font-weight: 400;
   padding-top: 120px;
   display: flex;
   justify-content: center; }
+  .carouselSmall-wrapper .carousel-inner {
+    height: auto; }
 
 .slideArrow {
   color: #000;
@@ -374,7 +380,10 @@ font-weight: 400;
 
 @media screen and (max-width: 769px) {
   .carouselSmall-wrapper {
-    height: auto; } }
+    height: auto;
+    padding-top: 100px; }
+    .carouselSmall-wrapper .carousel-inner {
+      height: 300px; } }
 
 .trefoilBtn {
   transition: 0.5s cubic-belzier(0.175, 0.885, 0.32, 1.275); }
@@ -418,20 +427,22 @@ li {
   display: flex;
   align-items: center; }
 
-#carouselHome .carousel-inner {
-  padding: 0 160px;
-  display: flex;
-  align-items: center; }
-  #carouselHome .carousel-inner .carousel-item {
-    transition: transform ease-in-out; }
-    #carouselHome .carousel-inner .carousel-item p {
-      margin-bottom: 0; }
-
-#carouselHome .carousel-control-next {
-  color: #000;
-  left: 0;
-  right: unset;
-  opacity: 1; }
+#carouselHome {
+  flex-wrap: nowrap; }
+  #carouselHome .carousel-inner {
+    padding: 0 160px;
+    display: flex;
+    align-items: center; }
+    #carouselHome .carousel-inner .carousel-item {
+      transition: transform ease-in-out; }
+      #carouselHome .carousel-inner .carousel-item p {
+        margin-bottom: 0; }
+  #carouselHome .carousel-control-next {
+    position: absolute;
+    color: #000;
+    left: 0;
+    right: unset;
+    opacity: 1; }
 
 /***********************************/
 /***********************************/
@@ -474,12 +485,19 @@ li {
       margin-top: 40px; }
   .desktop-element {
     display: none; }
-  .content-wrapper {
+  .homeContent-wrapper {
     display: flex;
     justify-content: center; }
-    .content-wrapper .trefoilLink-wrapper {
+    .homeContent-wrapper .trefoilLink-wrapper {
       width: fit-content;
-      margin-left: 0;
-      margin-bottom: 150px; }
+      display: flex;
+      justify-content: center; }
   #carouselHome .carousel-inner {
-    padding: 0; } }
+    padding: 0; }
+  .carouselSmall-wrapper #carouselHome {
+    justify-content: center; }
+  #carouselHome {
+    flex-wrap: wrap;
+    justify-content: center; }
+    #carouselHome .carousel-control-next {
+      position: relative; } }

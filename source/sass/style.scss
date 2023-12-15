@@ -64,6 +64,7 @@ li {
 }
 
 #carouselHome {
+	flex-wrap: nowrap;
 	.carousel-inner {
 		padding: 0 160px;
 		display: flex;
@@ -76,6 +77,7 @@ li {
 		}
 	}
 	.carousel-control-next {
+		position: absolute;
 		color: #000;
 		left: 0;
 		right: unset;
@@ -132,18 +134,32 @@ li {
 		display: none;
 	}
 
-	.content-wrapper {
+	.homeContent-wrapper {
 		display: flex;
 		justify-content: center;
 		.trefoilLink-wrapper {
 			width: fit-content;
-			margin-left: 0;
-			margin-bottom: 150px;
+			// margin-left: 0;
+			// margin-bottom: 150px;
+			display: flex;
+			justify-content: center;
 			// margin-top: 60px;
 		}
 	}
 
 	#carouselHome .carousel-inner {
 		padding: 0;
+	}
+
+	.carouselSmall-wrapper #carouselHome {
+		justify-content: center;
+	}
+
+	#carouselHome {
+		flex-wrap: wrap;
+		justify-content: center;
+		.carousel-control-next {
+			position: relative;
+		}
 	}
 }
