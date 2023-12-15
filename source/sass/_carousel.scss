@@ -1,0 +1,19 @@
+.carouselSmall-wrapper {
+    width: 100%;
+		height: 300px;
+    padding-top: 120px;
+    // padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.slideArrow {
+  color: #000;
+	font-size: 2rem;
+}
+
+@media screen and (max-width: 769px) { 
+  .carouselSmall-wrapper {
+    height: auto;
+  }
+}
