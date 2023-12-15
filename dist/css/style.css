@@ -28,8 +28,6 @@ font-weight: 400;
    03-03-17
 */
 .logo-wrapper {
-  border: 2px solid #000;
-  border-radius: 7px;
   padding: 5px 10px;
   width: fit-content;
   height: fit-content;
@@ -38,7 +36,9 @@ font-weight: 400;
   .logo-wrapper .logo {
     color: #000;
     font-family: "balboa-plus-fill";
-    margin-bottom: 0; }
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    letter-spacing: -2px; }
 
 @media screen and (max-width: 769px) {
   .logo-wrapper .logo {

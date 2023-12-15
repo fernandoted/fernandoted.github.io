@@ -4,8 +4,8 @@
 */
 
 .logo-wrapper {
-	border: 2px solid #000;
-	border-radius: 7px;
+	// border: 2px solid #000;
+	// border-radius: 7px;
 	padding: 5px 10px;
 	width: fit-content;
 	height: fit-content;
@@ -14,7 +14,9 @@
 	.logo {
 		color: #000;
 		font-family: $logo-font;
+		font-size: 3.5rem;
 		margin-bottom: 0;
+		letter-spacing: -2px;
 	}
 }
 
