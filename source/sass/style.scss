@@ -4,22 +4,15 @@
 */
 
 @import "variables";
-// @import "mixins";
-// @import "menu";
 @import "logo";
 @import "background";
-// @import "leftbar";
 @import "title";
-// @import "text";
 @import "social";
-// @import "links-buttons";
 @import "images";
 @import "topbar";
 @import "typography";
 @import "carousel";
 @import "animations";
-// @import "footer";
-// @import "_language";
 
 
 html, body {
@@ -58,7 +51,7 @@ li {
 }
 
 .desktop-element {
-	display: none;
+	display: block;
 }
 
 .smart-element {
@@ -133,6 +126,10 @@ li {
 			margin-right: 0;
 			margin-top: 40px;
 		}
+	}
+
+	.desktop-element {
+		display: none;
 	}
 
 	.content-wrapper {

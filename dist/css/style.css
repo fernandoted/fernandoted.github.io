@@ -409,7 +409,7 @@ li {
   justify-content: space-between; }
 
 .desktop-element {
-  display: none; }
+  display: block; }
 
 .smart-element {
   display: block; }
@@ -472,6 +472,8 @@ li {
       justify-content: center;
       margin-right: 0;
       margin-top: 40px; }
+  .desktop-element {
+    display: none; }
   .content-wrapper {
     display: flex;
     justify-content: center; }
