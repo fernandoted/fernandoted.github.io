@@ -172,6 +172,9 @@ font-weight: 400;
     font-family: "museo-slab";
     font-size: 2rem; }
 
+.titleSection {
+  font-family: 'Soviet', sans-serif; }
+
 .section-subtitle {
   font-size: 1.125rem;
   font-family: "museo-slab"; }
@@ -406,6 +409,12 @@ h1 {
 
 li {
   list-style: none; }
+
+@font-face {
+  font-family: 'Soviet';
+  src: url("../../dist/assets/Soviet-M4Kw.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 .container-full {
   margin: 0;
